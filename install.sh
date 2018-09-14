@@ -24,8 +24,6 @@ cd ../wiiweigh
 
 sudo apt-get install -y libxwiimote-dev
 
-
-
 sudo gpasswd -a pi bluetooth # add user pi to bluetooth group
 # reboot or the wiiweight script will throw an exception
 # when trying to disconnect as normal user
@@ -33,9 +31,13 @@ sudo gpasswd -a pi bluetooth # add user pi to bluetooth group
 #sudo bluetoothctl
 
 # continue with bluetooth setup below
-cd ~
+
 
 #wii =00:1E:35:FC:C3:1F
 #pair 00:1E:35:FC:C3:1F
 #connect 00:1E:35:FC:C3:1F
 #trust 00:1E:35:FC:C3:1F
+cd ~
+git clone https://github.com/Manuel83/craftbeerpi3
+cd craftbeerpi3
+sudo ./install.sh
