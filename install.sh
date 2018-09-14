@@ -1,3 +1,3 @@
 apt-get update
 apt-get install git
-apt-get titioyo
+apt-get titioyoo
