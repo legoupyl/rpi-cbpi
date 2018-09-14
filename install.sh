@@ -2,6 +2,7 @@ sudo apt-get update
 
 # on raspbian already installed packages:
 # sudo apt-get install build-essential bluez
+apt-get install -y git
 sudo apt-get -y install python-dbus git autoconf libtool libudev-dev \
                      libncurses5-dev swig python-dev python-numpy
 
@@ -20,6 +21,10 @@ cd ../xwiimote-bindings
 make
 sudo make install
 cd ../wiiweigh
+
+sudo apt-get install -y libxwiimote-dev
+
+
 
 sudo gpasswd -a pi bluetooth # add user pi to bluetooth group
 # reboot or the wiiweight script will throw an exception
