@@ -2,40 +2,40 @@ sudo apt-get update
 
 # on raspbian already installed packages:
 # sudo apt-get install build-essential bluez
-sudo apt-get install -y git
-sudo apt-get install -y python-pip
+
+#\curl -sSL https://get.initialstate.com/python -o - | sudo bash
 #pip install PyBluez
 
-sudo apt-get -y install python-dbus git autoconf libtool libudev-dev \
-                     libncurses5-dev swig python-dev python-numpy
-sudo apt-get install autoconf
+sudo apt-get install -y python-pip
+sudo apt-get install -y git
+sudo apt-get install -y autoconf
+sudo apt-get install -y libtool
 sudo apt-get install -y libxwiimote-dev
-cd ~
-git clone https://github.com/chaosbiber/wiiweigh.git
-mkdir src && cd src
-git clone https://github.com/dvdhrm/xwiimote.git
-git clone https://github.com/dvdhrm/xwiimote-bindings.git
-git clone https://github.com/chaosbiber/wiiweigh.git
-cd xwiimote
-./autogen.sh
-make
-sudo make install
-cd ../xwiimote-bindings
-./autogen.sh
-make
-sudo make install
-cd ../wiiweigh
+sudo apt-get install -y swig
+sudo apt-get install -y libpython2.7-dev
+sudo apt-get install -y pkg-config
+sudo apt-get install -y libboost-python-dev
+sudo apt-get install -y libboost-thread-dev
+sudo apt-get install -y libbluetooth-dev 
+sudo apt-get install -y libglib2.0-dev
+sudo apt-get install -y python-dev
+sudo pip install -y PyBluez
+sudo apt-get install -y libgtkmm-2.4-dev
+sudo apt-get install -y nodejs npm npm-legacy
 
 
 
-sudo gpasswd -a pi bluetooth # add user pi to bluetooth group
+
+#sudo gpasswd -a pi bluetooth # add user pi to bluetooth group
 # reboot or the wiiweight script will throw an exception
 # when trying to disconnect as normal user
 
 #sudo bluetoothctl
 
 # continue with bluetooth setup below
-
+#power on
+#agent on
+#Scan on
 
 #wii =00:1E:35:FC:C3:1F
 #pair 00:1E:35:FC:C3:1F
