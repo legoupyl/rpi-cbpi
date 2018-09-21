@@ -8,7 +8,7 @@ sudo apt-get install -y git
 sudo apt-get install -y cmake
 
 
-# 
+##
 sudo apt-get install -y libxwiimote-dev 
 sudo apt-get install -y libboost-program-options-dev 
 sudo apt-get install -y libboost-system-dev 
