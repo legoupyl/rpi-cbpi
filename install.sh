@@ -16,14 +16,19 @@ sudo apt-get install -y libboost-date-time-dev
 sudo apt-get install -y libboost-random-dev 
 sudo apt-get install -y libglibmm-2.4-dev 
 sudo apt-get install -y libssl-dev 
-sudo apt-get install -y cppcheck 
+sudo apt-get install -y cppcheck
+
+sudo apt-get install -y nodejs 
+sudo apt-get install -y npm 
+sudo apt-get install -y nodejs-legacy
+
 ## wiiScale SRC
 cd /opt
 sudo mkdir Wii-Scale
 sudo chown root:pi Wii-Scale
 sudo chmod 775 Wii-Scale
 cd Wii-Scale/
-git clone https://github.com/aelveborn/Wii-Scale.git --recursive --depth 1 .
+sudo git clone https://github.com/aelveborn/Wii-Scale.git --recursive --depth 1 .
 sudo cp wii-scale/70-wii-scales.rules /etc/udev/rules.d/
 
 #wiiScale Build
