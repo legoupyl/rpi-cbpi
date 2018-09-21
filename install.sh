@@ -7,6 +7,7 @@ sudo apt-get update
 # Base tools 
 sudo apt-get install -y git
 sudo apt-get install -y cmake
+sudo apt-get install -y bluez
 
 
 ## wiiScale prerequisites
@@ -38,6 +39,11 @@ cmake ../wii-scale && make
 npm install --production
 npm config set wii-scale:host 0.0.0.0
 
+#Install cbpi
+cd ~
+git clone https://github.com/Manuel83/craftbeerpi3
+cd craftbeerpi3
+sudo ./install.sh
 
 
 #sudo apt-get install -y python-pip
@@ -55,27 +61,6 @@ npm config set wii-scale:host 0.0.0.0
 #sudo pip install -y PyBluez
 #sudo apt-get install -y libgtkmm-2.4-dev
 #sudo apt-get install -y nodejs npm nodejs-legacy
-cd ~
 
 
 
-
-#sudo gpasswd -a pi bluetooth # add user pi to bluetooth group
-# reboot or the wiiweight script will throw an exception
-# when trying to disconnect as normal user
-
-#sudo bluetoothctl
-
-# continue with bluetooth setup below
-#power on
-#agent on
-#Scan on
-
-#wii =00:1E:35:FC:C3:1F
-#pair 00:1E:35:FC:C3:1F
-#connect 00:1E:35:FC:C3:1F
-#trust 00:1E:35:FC:C3:1F
-cd ~
-#git clone https://github.com/Manuel83/craftbeerpi3
-#cd craftbeerpi3
-#sudo ./install.sh
