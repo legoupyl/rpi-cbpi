@@ -42,6 +42,9 @@ mkdir build && cd build
 cmake ../wii-scale && make
 npm install --production
 npm config set wii-scale:host 0.0.0.0
+sudo usermod -aG lp $USER
+npm start
+
 
 #Install cbpi
 cd ~
