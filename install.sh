@@ -1,5 +1,5 @@
 # Download and run this file : 
-# cd ~ && mkdir rpi-cbpi && cd ./rpi-cbpi && curl -OL https://raw.github.com/xavfan/rpi-cbpi/master/install.sh && sudo chmod 777 ./install.sh &&./install.sh
+# cd ~ && curl -OL https://raw.github.com/xavfan/rpi-cbpi/master/install.sh && sudo chmod 777 ./install.sh &&./install.sh
 # Push this file : git add * && git commit -m "ok" && git push
 
 
@@ -9,6 +9,10 @@ sudo apt-get install -y git
 sudo apt-get install -y cmake
 sudo apt-get install -y bluez
 
+cd ~
+git clone https://github.com/xavfan/rpi-cbpi.git
+cd rpi-cbpi
+chmod 777 ./wii-pair.sh
 
 ## wiiScale prerequisites
 sudo apt-get install -y libxwiimote-dev 
@@ -61,6 +65,3 @@ sudo ./install.sh
 #sudo pip install -y PyBluez
 #sudo apt-get install -y libgtkmm-2.4-dev
 #sudo apt-get install -y nodejs npm nodejs-legacy
-
-
-
