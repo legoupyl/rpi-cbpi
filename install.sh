@@ -2,6 +2,7 @@
 # cd ~ && mkdir rpi-cbpi && cd ./rpi-cbpi && curl -OL https://raw.github.com/xavfan/rpi-cbpi/master/install.sh && sudo chmod 777 ./install.sh &&./install.sh
 # Push this file : git add * && git commit -m "ok" && git push
 
+
 sudo apt-get update
 # Base tools 
 sudo apt-get install -y git
@@ -25,7 +26,7 @@ sudo apt-get install -y nodejs-legacy
 ## wiiScale SRC
 cd /opt
 sudo mkdir Wii-Scale
-sudo chown root:pi Wii-Scale
+sudo chown root:$USER Wii-Scale
 sudo chmod 775 Wii-Scale
 cd Wii-Scale/
 sudo git clone https://github.com/aelveborn/Wii-Scale.git --recursive --depth 1 .
