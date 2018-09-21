@@ -1,27 +1,43 @@
+# Download and run this file : 
+# cd ~ && mkdir rpi-cbpi && cd ./rpi-cbpi && curl -OL https://raw.github.com/xavfan/rpi-cbpi/master/install.sh && sudo chmod 777 ./install.sh &&./install.sh
+# Push this file : git add * && git commit -m "ok" && git push
+
 sudo apt-get update
-
-# on raspbian already installed packages:
-# sudo apt-get install build-essential bluez
-
-#\curl -sSL https://get.initialstate.com/python -o - | sudo bash
-#pip install PyBluez
-
-sudo apt-get install -y python-pip
+# Base tools 
 sudo apt-get install -y git
-sudo apt-get install -y autoconf
-sudo apt-get install -y libtool
-sudo apt-get install -y libxwiimote-dev
-sudo apt-get install -y swig
-sudo apt-get install -y libpython2.7-dev
-sudo apt-get install -y pkg-config
-sudo apt-get install -y libboost-python-dev
-sudo apt-get install -y libboost-thread-dev
-sudo apt-get install -y libbluetooth-dev 
-sudo apt-get install -y libglib2.0-dev
-sudo apt-get install -y python-dev
-sudo pip install -y PyBluez
-sudo apt-get install -y libgtkmm-2.4-dev
-sudo apt-get install -y nodejs npm npm-legacy
+sudo apt-get install -y cmake
+
+
+# 
+sudo apt-get install -y libxwiimote-dev 
+sudo apt-get install -y libboost-program-options-dev 
+sudo apt-get install -y libboost-system-dev 
+sudo apt-get install -y libboost-date-time-dev 
+sudo apt-get install -y libboost-random-dev 
+sudo apt-get install -y libglibmm-2.4-dev 
+sudo apt-get install -y libssl-dev 
+sudo apt-get install -y cppcheck 
+
+
+
+
+
+#sudo apt-get install -y python-pip
+#sudo apt-get install -y autoconf
+#sudo apt-get install -y libtool
+#sudo apt-get install -y libxwiimote-dev
+#sudo apt-get install -y swig
+#sudo apt-get install -y libpython2.7-dev
+#sudo apt-get install -y pkg-config
+#sudo apt-get install -y libboost-python-dev
+#sudo apt-get install -y libboost-thread-dev
+#sudo apt-get install -y libbluetooth-dev 
+#sudo apt-get install -y libglib2.0-dev
+#sudo apt-get install -y python-dev
+#sudo pip install -y PyBluez
+#sudo apt-get install -y libgtkmm-2.4-dev
+#sudo apt-get install -y nodejs npm nodejs-legacy
+cd ~
 
 
 
