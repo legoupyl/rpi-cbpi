@@ -24,8 +24,8 @@ sudo apt-get install -y libglibmm-2.4-dev
 sudo apt-get install -y libssl-dev 
 sudo apt-get install -y cppcheck
 sudo apt-get install -y nodejs=4.8.2~dfsg-1
-sudo apt-get install -y npm 
 sudo apt-get install -y nodejs-legacy
+sudo apt-get install -y npm 
 sudo npm install bufferutil --save
 
 ## wiiScale SRC
