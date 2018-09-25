@@ -27,6 +27,7 @@ sudo apt-get install -y cppcheck
 sudo apt-get install -y nodejs 
 sudo apt-get install -y npm 
 sudo apt-get install -y nodejs-legacy
+sudo npm install bufferutil --save
 
 ## wiiScale SRC
 cd /opt
