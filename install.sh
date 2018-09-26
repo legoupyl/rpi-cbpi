@@ -57,8 +57,8 @@ sudo apt-get install -y libbluetooth-dev
 #sudo apt-get install -y libglib2.0-dev
 sudo apt-get install -y python-dev
 sudo pip install PyBluez
-
-
+sudo apt install libsdl1.2-dev
+sudo pip install pygame
 #Install cbpi
 cd ~
 git clone https://github.com/Manuel83/craftbeerpi3
