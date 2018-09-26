@@ -66,5 +66,3 @@ sudo ./install.sh
 #sudo apt-get install -y libglib2.0-dev
 #sudo apt-get install -y python-dev
 #sudo pip install PyBluez
-#sudo apt-get install -y libgtkmm-2.4-dev
-#sudo apt-get install -y nodejs npm nodejs-legacy
