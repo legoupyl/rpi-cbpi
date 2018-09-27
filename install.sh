@@ -6,7 +6,7 @@
 sudo apt-get update
 # Base tools 
 sudo apt-get install -y git
-sudo apt-get install -y cmake
+#sudo apt-get install -y cmake
 sudo apt-get install -y bluez
 
 cd ~
@@ -58,7 +58,8 @@ sudo apt-get install -y libbluetooth-dev
 sudo apt-get install -y python-dev
 sudo pip install PyBluez
 sudo apt install libsdl1.2-dev
-sudo pip install pygame
+sudo apt-get install python-pygame
+
 #Install cbpi
 cd ~
 git clone https://github.com/Manuel83/craftbeerpi3
