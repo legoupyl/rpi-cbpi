@@ -60,6 +60,8 @@ sudo pip install PyBluez
 sudo apt install libsdl1.2-dev
 sudo apt-get install python-pygame
 
+cd ~
+git clone https://github.com/mtjacks/WiiFit.git
 #Install cbpi
 cd ~
 git clone https://github.com/Manuel83/craftbeerpi3
