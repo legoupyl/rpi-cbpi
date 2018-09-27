@@ -58,7 +58,7 @@ sudo apt-get install -y libbluetooth-dev
 sudo apt-get install -y python-dev
 sudo pip install PyBluez
 sudo apt install libsdl1.2-dev
-sudo apt-get install python-pygame
+sudo apt-get -y install python-pygame
 
 cd ~
 git clone https://github.com/mtjacks/WiiFit.git
